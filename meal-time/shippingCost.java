@@ -10,15 +10,22 @@ public class shippingCost {
     System.out.println("How far is your package travelling?");
     String stringDistance = myConsole.readLine();
 
-    double finalPrice = (Double.parseDouble(stringWeight) + Double.parseDouble(stringDistance)) / 8;
+    System.out.println("What discount do you have?");
+    String stringDiscount = myConsole.readLine();
+
+    Integer yourNumber = Integer.parseInt(stringWeight) + Integer.parseInt(stringDistance);
+
+    Integer finalCost = (yourNumber) / (Integer.parseInt(stringDiscount));
+
+    // double finalPrice = (Double.parseDouble(stringWeight) + Double.parseDouble(stringDistance)) / 8;
 
     //Integer
 
-    System.out.println("Your final shipping cost is: " + finalPrice + ".");
+    System.out.println("Your final shipping cost is: " + finalCost + ".");
   }
 }
 
-KEEP WORKING ON THIS ONE!
+// KEEP WORKING ON THIS ONE!
 
 
 

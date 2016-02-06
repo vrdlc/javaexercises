@@ -8,10 +8,7 @@ public class Friends {
 
 
       for(String name : myFriends) {
-        name += "is my friend."
+        System.out.println(name += " is my friend.");
       }
-
-    System.out.println();
-INCOMPLETE
   }
 }
